@@ -57,13 +57,13 @@ $(function() {
 			success: function(res) {
 				if(res.status !== 0) {
 					return layer.msg('登录失败！');
-				};
+				}
 				layer.msg('登录成功!');
 				// 将登录成功的token字符串保存到localStorage中
 				localStorage.setItem('token', res.token);
 				// 跳转到后台主页
-				location.herf = '/index.html';
-
+				location.href = './index.html';
+				// console.log(location.href);
 			}
 		})
 	})
