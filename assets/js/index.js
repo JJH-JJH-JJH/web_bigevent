@@ -30,7 +30,7 @@ function getUserInfo() {
 			}
 			// 调用renderAvatar 渲染用户头像
 			renderAvatar(res.data);
-			console.log(res);
+			// console.log(res);
 		},
 		// // 无论成功或失败都会调用的函数
 		// complete: function(res) {
